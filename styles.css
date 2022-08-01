@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0%;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none; /* prevents the user from selecting anything in the page */
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #586261;
+  perspective: 1000px; /*check */
+  transform-style: preserve-3d; /* check */
+}
+
+.card {
+  background-color: #83878d;
+  height: 380px;
+  width: 300px;
+  margin: auto;
+  border-radius: 5px;
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+  box-shadow: 10px 10px 40px #f4dde3;
+}
+
+.card .content {
+  color: white;
+  text-align: center;
+  transform-style: preserve-3d;
+}
+
+.content .user {
+  height: 100px;
+  width: 100px;
+  background-color: #483d41;
+  border: 1px solid #586261;
+  border-radius: 50%;
+  margin: 10px auto;
+  transform: translateZ(50px);
+}
+
+.user .fa-user {
+  color: white;
+  line-height: 100px;
+  font-size: 40px;
+  /* text-align: center; */
+}
+
+.content header {
+  margin: 20px 0;
+  font-size: 32px;
+  font-weight: 600;
+  transform: translateZ(50px);
+}
+.content .follow-us {
+  font-size: 20px;
+  font-weight: 600;
+  transform: translateZ(50px);
+}
+.content .icons {
+  margin: 20px 0 10px 0;
+  transform: translateZ(50px);
+}
+.icons a {
+  margin: 0 4px;
+}
+
+.icons a span {
+  height: 30px;
+  width: 30px;
+  background-color: #f4dde3;
+  border: 1px solid #ffffff;
+  line-height: 30px;
+  border-radius: 50%;
+  color: white;
+}
